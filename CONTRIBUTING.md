@@ -1,13 +1,12 @@
 # Contributing To NEHS Utils
 
+<a name="stuff-to-know"></a>
+### Stuff to Know
 
-### Maintained Projects
-- [cpp-logger](https://github.com/AlexFxw/cpp-logger)
-- [ANSI Escape](https://github.com/HsuanTingLu/ansi-escape)
-
-
-<a name="collaborate-references"></a>
-We use the Gitflow workflow to collaborate
-### References
+#### We use the Gitflow workflow to collaborate
 - [About Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+#### Audit before submit
+run `brew audit --strict --online {formula}` to lint for possible problems
+
