@@ -1,27 +1,27 @@
-# homebrew-terminal-utils
-macOS Homebrew formulas to install my terminal utilities
+# Retro NEHS Utilities
 
-This is a [Homebrew](http://brew.sh/) tap for formulas for software developed by me and my friends
+macOS Homebrew formulas for [Retro NEHS](https://github.com/retro-NEHS) utilities
 
-## Setup
-Using these formulas requires Homebrew, which in turn requires Xcode.
+---
+- [About](#about)
+- [Maintained Projects](maintained-projects)
+- [Quick Start](#quick-start)
+---
 
-Once Homebrew is installed, simply run
+<a name="about"></a>
+## About
+This repository aims to integrate the collaborative ultility projects of ours into day to day work via [Homebrew](https://brew.sh)
+
+<a name="maintained-projects"></a>
+## Maintained Projects
+formulas for the following projects are maintained
+- [cpp-logger](https://github.com/AlexFxw/cpp-logger)
+- [ANSI Escape](https://github.com/HsuanTingLu/ansi-escape)
+
+<a name="quick-start"></a>
+## Quick Start
+With [Homebrew](https://brew.sh) installed, run
 ```Shell
-brew tap hsuantinglu/terminal-utils
+brew tap retro-NEHS/brew
 ```
-
-## Use
-To install software, just use `brew install <name-of-formula>`.
-You may wish to run `brew update` before hand to get the latest version of the formula.
-
-To upgrade:
-```Shell
-brew update
-brew upgrade  # To upgrade all formulas installed with Homebrew
-brew upgrade <name-of-formula>  # To upgrade a specific one
-```
-
-
-## Collaborators
-- [@AlexFxw](https://github.com/AlexFxw/)
+to gain access to these Homebrew formulas
