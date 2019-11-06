@@ -5,22 +5,35 @@
 #
 
 class AnsiEscape < Formula
-  ANSIESCAPE_VERSION = "1.0.0".freeze
   desc "ANSI escape codes wrapped in C++ string streams"
   homepage "https://hsuantinglu.github.io/ansi-escape/"
-  url "https://github.com/hsuantinglu/ansi-escape/archive/v#{ANSIESCAPE_VERSION}.tar.gz"
-  sha256 "2f92ee01d8266ca8b1dc6e3d5a19acfc47cf80a4a900b692c577ba6ee2e46b63"
   head "https://github.com/hsuantinglu/ansi-escape.git"
+
+  stable do
+    url "https://github.com/hsuantinglu/ansi-escape/archive/v1.0.0.tar.gz"
+    sha256 "2f92ee01d8266ca8b1dc6e3d5a19acfc47cf80a4a900b692c577ba6ee2e46b63"
+
+    #patch do
+    #  url ""
+    #  sha256 ""
+    #end
+  end
+
+  #bottle do
+  #  sha256 "" => :catalina
+  #  sha256 "" => :mojave
+  #end
 
   depends_on "cmake" => :build
 
   def install
-    ohai "Building ansi-escape"
     system "cmake", ".", *std_cmake_args
-    # Mark the config as successful.
-    touch "successful-cmake"
+    system "make"
     system "make", "install"
   end
+
+  #def post_install
+  #end
 
   test do
     ohai "Setting up ansi-escape repository in " + testpath
