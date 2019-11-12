@@ -24,7 +24,7 @@ class AnsiEscape < Formula
   bottle do
     root_url "https://github.com/HsuanTingLu/ansi-escape/releases/download/v#{AESC_VERSION}/ansi-escape--#{AESC_VERSION}"
     cellar :any
-    sha256 "519cc3afb6c1c56110f69595b528e715eea2fcffa25355c3c111a26f63e2eb81" => :catalina
+    sha256 "6e7f66504bede8bcae5b1f0855b5224c43f032135ac1b8342c669cc2eb8b795e" => :catalina
   end
 
   depends_on "cmake" => :build
