@@ -8,23 +8,15 @@ class AnsiEscape < Formula
   AESC_VERSION = "1.1.2".freeze
   desc "ANSI escape codes wrapped in C++ string streams"
   homepage "https://hsuantinglu.github.io/ansi-escape/"
+  version "#{AESC_VERSION}"
+  url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
+  sha256 "a3b189b9353eecd2da6623d309e31fd4ecefae9cf101d239117f5d0bb583721c"
   head "https://github.com/hsuantinglu/ansi-escape.git"
 
-  stable do
-    version "#{AESC_VERSION}"
-    url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
-    sha256 "a3b189b9353eecd2da6623d309e31fd4ecefae9cf101d239117f5d0bb583721c"
-
-    # patch do
-    #   url ""
-    #   sha256 ""
-    # end
-  end
-
   bottle do
-    root_url "https://github.com/HsuanTingLu/ansi-escape/releases/download/v#{AESC_VERSION}/ansi-escape--#{AESC_VERSION}"
+    root_url "https://github.com/HsuanTingLu/ansi-escape/releases/download/v#{AESC_VERSION}"
     cellar :any
-    sha256 "6e7f66504bede8bcae5b1f0855b5224c43f032135ac1b8342c669cc2eb8b795e" => :catalina
+    sha256 "e4a86452998fb73f8c6c6c5c16c4c84b66badd2f9687d076490a0c7a4bc9badf" => :catalina
   end
 
   depends_on "cmake" => :build
@@ -48,6 +40,6 @@ class AnsiEscape < Formula
 
   test do
     ohai "Setting up ansi-escape repository in " + testpath
-    ohai "There's no test for this repo, for now."
+    opoo "There's no test for this repo, for now."
   end
 end
