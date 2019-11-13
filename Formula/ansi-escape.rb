@@ -11,7 +11,7 @@ class AnsiEscape < Formula
   version "#{AESC_VERSION}"
   url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
   sha256 "23278fa840b390f5ab9f861f085c02605a314557fd19472cc7d2bf4c49aa205d"
-  head "https://github.com/hsuantinglu/ansi-escape.git"
+  head "https://github.com/hsuantinglu/ansi-escape.git", :branch => "develop"
 
   # bottle do
   #   root_url "https://github.com/HsuanTingLu/ansi-escape/releases/download/v#{AESC_VERSION}"
