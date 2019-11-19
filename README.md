@@ -15,9 +15,10 @@ This repository aims to integrate the collaborative ultility projects of ours in
 <a name="maintained-projects"></a>
 ## Maintained Projects
 formulas for the following projects are maintained
-- [cpp-logger](https://github.com/AlexFxw/cpp-logger)
 - [ANSI Escape](https://github.com/HsuanTingLu/ansi-escape)
+- [cpp-logger](https://github.com/AlexFxw/cpp-logger)
 - [howhow-cpp](https://github.com/HsuanTingLu/howhow-cpp)
+- [pbar](https://github.com/HsuanTingLu/pbar)
 
 <a name="quick-start"></a>
 ## Quick Start
