@@ -23,6 +23,6 @@ formulas for the following projects are maintained
 ## Quick Start
 With [Homebrew](https://brew.sh) installed, run
 ```Shell
-brew tap retro-NEHS/brew
+brew tap hsuantinglu/utils
 ```
 to gain access to these Homebrew formulas
