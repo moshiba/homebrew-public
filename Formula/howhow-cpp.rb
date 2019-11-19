@@ -4,7 +4,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-class HowHowCpp < Formula
+class HowhowCpp < Formula
   HHC_VERSION = "1.0.0".freeze
   desc "HowHow classic quotes in cpp"
   homepage "https://hsuantinglu.github.io/howhow-cpp/"

@@ -17,6 +17,7 @@ This repository aims to integrate the collaborative ultility projects of ours in
 formulas for the following projects are maintained
 - [cpp-logger](https://github.com/AlexFxw/cpp-logger)
 - [ANSI Escape](https://github.com/HsuanTingLu/ansi-escape)
+- [howhow-cpp](https://github.com/HsuanTingLu/howhow-cpp)
 
 <a name="quick-start"></a>
 ## Quick Start
