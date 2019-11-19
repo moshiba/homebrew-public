@@ -1,6 +1,6 @@
-# Retro NEHS Utilities
+# Hsuan-Ting Lu Utilities
 
-macOS Homebrew formulas for [Retro NEHS](https://github.com/retro-NEHS) utilities
+macOS Homebrew formulas for [my](https://github.com/HsuanTingLu) utilities
 
 ---
 - [About](#about)
