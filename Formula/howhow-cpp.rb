@@ -7,8 +7,7 @@
 class HowhowCpp < Formula
   HHC_VERSION = "1.0.0".freeze
   desc "HowHow classic quotes in cpp"
-  homepage "https://hsuantinglu.github.io/howhow-cpp/"
-  version "#{HHC_VERSION}"
+  homepage "https://hsuantinglu.github.io/howhow-cpp/index.html"
   url "https://github.com/hsuantinglu/howhow-cpp/archive/v#{HHC_VERSION}.tar.gz"
   sha256 "842b4f2ccad893df84c84dfea8505bcc1c96a156a38f591942969d23f4d0c086"
   head "https://github.com/hsuantinglu/howhow-cpp.git", :branch => "develop"

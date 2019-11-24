@@ -8,7 +8,6 @@ class AnsiEscape < Formula
   AESC_VERSION = "1.2.1".freeze
   desc "ANSI escape codes wrapped in C++ string streams"
   homepage "https://hsuantinglu.github.io/ansi-escape/"
-  version "#{AESC_VERSION}"
   url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
   sha256 "23278fa840b390f5ab9f861f085c02605a314557fd19472cc7d2bf4c49aa205d"
   head "https://github.com/hsuantinglu/ansi-escape.git", :branch => "develop"
