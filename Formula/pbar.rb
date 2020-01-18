@@ -5,11 +5,11 @@
 #
 
 class Pbar < Formula
-  PBAR_VERSION = "1.3.1".freeze
+  PBAR_VERSION = "1.4.0".freeze
   desc "Low overhead C++ progress bar"
   homepage "https://hsuantinglu.github.io/pbar/index.html"
   url "https://github.com/hsuantinglu/pbar/archive/v#{PBAR_VERSION}.tar.gz"
-  sha256 "690d785f0c4dce8586a3eb6ff5dfaac1996eb3156b577c495bb78d27f1ac4cd5"
+  sha256 "daa9ae67368a8d846730e0d547df0ec58795cb8603f8800b61ef440a1ddf978a"
   head "https://github.com/hsuantinglu/pbar.git", :branch => "develop"
 
   # bottle do
