@@ -5,11 +5,12 @@
 #
 
 class AnsiEscape < Formula
-  AESC_VERSION = "1.2.2".freeze
+  AESC_VERSION = "1.3.0".freeze
   desc "ANSI escape codes wrapped in C++ string streams"
   homepage "https://hsuantinglu.github.io/ansi-escape/"
   url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
-  sha256 "f596b7813cca58270d4472fb0745d0729a3ec89165bdc0763aed02ade23501b6"
+  sha256 "67be38ca32a7ff8f5a87be813099c1216675d684c0f63e41f88ff63f2706052a"
+  license "GPL-3.0-only"
   head "https://github.com/hsuantinglu/ansi-escape.git", :branch => "develop"
 
   # bottle do
@@ -18,12 +19,12 @@ class AnsiEscape < Formula
   #   sha256 "e4a86452998fb73f8c6c6c5c16c4c84b66badd2f9687d076490a0c7a4bc9badf" => :catalina
   # end
 
-  depends_on "cmake" => :build
+  depends_on "cmake" => [:build, :test]
 
   def install
     mkdir "_build" do
       args = std_cmake_args + %w[
-        -DRELEASE=ON
+        -DCMAKE_BUILD_TYPE=Release
       ]
 
       system "cmake", "..", *args, "-DBUILD_SHARED_LIBS=ON"
