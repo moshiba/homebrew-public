@@ -5,12 +5,12 @@
 #
 
 class AnsiEscape < Formula
-  AESC_VERSION = "1.3.0".freeze
+  AESC_VERSION = "1.4.0".freeze
   desc "ANSI escape codes wrapped in C++ string streams"
   homepage "https://hsuantinglu.github.io/ansi-escape/"
   url "https://github.com/hsuantinglu/ansi-escape/archive/v#{AESC_VERSION}.tar.gz"
-  sha256 "67be38ca32a7ff8f5a87be813099c1216675d684c0f63e41f88ff63f2706052a"
-  license "GPL-3.0-only"
+  sha256 "1560c3b9f2a412fdc225eb986876216aa5d10899d9cb3376f891a20b4712c739"
+  license "MIT"
   head "https://github.com/hsuantinglu/ansi-escape.git", :branch => "develop"
 
   # bottle do
