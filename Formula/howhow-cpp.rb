@@ -9,11 +9,18 @@ class HowhowCpp < Formula
   desc "HowHow classic quotes in cpp"
   homepage "https://hsuantinglu.github.io/howhow-cpp/index.html"
   url "https://github.com/hsuantinglu/howhow-cpp/archive/v#{HHC_VERSION}.tar.gz"
+  version_scheme 0
+  version "#{HHC_VERSION}"
   sha256 "842b4f2ccad893df84c84dfea8505bcc1c96a156a38f591942969d23f4d0c086"
+  revision 0
   head "https://github.com/hsuantinglu/howhow-cpp.git", :branch => "develop"
 
-  # bottle do
-  #   root_url "https://github.com/HsuanTingLu/howhow-cpp/releases/download/v#{HHC_VERSION}"
+  def caveats
+    <<~EOS
+      你才喜歡How哥，你全家都喜歡How哥
+    EOS
+  end
+
   #   cellar :any
   #   sha256 "" => :catalina
   # end
