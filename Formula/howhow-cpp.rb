@@ -5,21 +5,12 @@
 #
 
 class HowhowCpp < Formula
-  HHC_VERSION = "1.0.0".freeze
   desc "HowHow classic quotes in cpp"
   homepage "https://hsuantinglu.github.io/howhow-cpp/index.html"
-  url "https://github.com/hsuantinglu/howhow-cpp/archive/v#{HHC_VERSION}.tar.gz"
-  version_scheme 0
-  version "#{HHC_VERSION}"
+  url "https://github.com/hsuantinglu/howhow-cpp/archive/v1.0.0.tar.gz"
   sha256 "842b4f2ccad893df84c84dfea8505bcc1c96a156a38f591942969d23f4d0c086"
   revision 0
-  head "https://github.com/hsuantinglu/howhow-cpp.git", :branch => "develop"
-
-  def caveats
-    <<~EOS
-      你才喜歡How哥，你全家都喜歡How哥
-    EOS
-  end
+  head "https://github.com/hsuantinglu/howhow-cpp.git", branch: "master"
 
   #   cellar :any
   #   sha256 "" => :catalina
@@ -28,7 +19,6 @@ class HowhowCpp < Formula
   depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     mkdir "_build" do
       args = std_cmake_args + %w[
         -DRELEASE=ON
@@ -46,6 +36,12 @@ class HowhowCpp < Formula
 
   # def post_install
   # end
+
+  def caveats
+    <<~EOS
+      你才喜歡How哥，你全家都喜歡How哥
+    EOS
+  end
 
   test do
     ohai "Setting up howhow repository in " + testpath
