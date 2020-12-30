@@ -28,12 +28,15 @@ class HowhowCpp < Formula
   depends_on "cmake" => :build
 
   def install
+    # ENV.deparallelize  # if your formula fails when building in parallel
     mkdir "_build" do
       args = std_cmake_args + %w[
         -DRELEASE=ON
       ]
 
-      system "cmake", "..", *args, "-DBUILD_SHARED_LIBS=ON"
+      system "cmake", "..",
+                      *args,
+                      "-DBUILD_SHARED_LIBS=ON"
       system "make"
       system "make", "install"
 
