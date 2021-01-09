@@ -5,16 +5,18 @@
 #
 
 class HowhowCpp < Formula
-  desc "HowHow classic quotes in cpp"
+  desc "Blast users with quotes from HowHow"
   homepage "https://hsuantinglu.github.io/howhow-cpp/index.html"
   url "https://github.com/hsuantinglu/howhow-cpp/archive/v1.0.0.tar.gz"
   sha256 "842b4f2ccad893df84c84dfea8505bcc1c96a156a38f591942969d23f4d0c086"
+  license "Apache-2.0"
   revision 0
   head "https://github.com/hsuantinglu/howhow-cpp.git", branch: "master"
 
-  #   cellar :any
-  #   sha256 "" => :catalina
-  # end
+  livecheck do
+    url "https://github.com/hsuantinglu/howhow-cpp/releases/latest"
+    regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
+  end
 
   depends_on "cmake" => :build
 
@@ -30,7 +32,7 @@ class HowhowCpp < Formula
       system "make"
       system "make", "install"
 
-      # TODO: build a static library too
+      # TODO: build a static library too ?
     end
   end
 
